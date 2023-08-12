@@ -4,4 +4,6 @@ export class ReviewDto {
   review: string;
   reviewTitle: string;
   movieId: number;
+  email: string;
+  userName: string;
 }

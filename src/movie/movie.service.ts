@@ -18,7 +18,6 @@ export class MovieService {
     return this.movieRepository.findOne({
       where: { id },
       relations: {
-        genre: true,
         reviews: true,
       },
     });
@@ -27,7 +26,6 @@ export class MovieService {
   getAll(): Promise<Movie[]> {
     return this.movieRepository.find({
       relations: {
-        genre: true,
         reviews: true,
       },
     });
@@ -35,6 +33,16 @@ export class MovieService {
 
   async add(dto: MoviewDto) {
     const movie = new Movie();
+    movie.actors = dto.actors;
+    movie.country = dto.country;
+    movie.director = dto.director;
+    movie.language = dto.language;
+    movie.plot = dto.plot;
+    movie.poster = dto.poster;
+    movie.runtime = dto.runtime;
+    movie.title = dto.title;
+    movie.writer = dto.writer;
+    movie.year = dto.year;
     movie.released = new Date(dto.released);
 
     const genres = await Promise.all(
@@ -42,13 +50,25 @@ export class MovieService {
         async (id) => await this.genreRepository.findOne({ where: { id } }),
       ),
     );
-    movie.genre = genres;
-    this.movieRepository.insert(movie);
+    console.log('---> genres', genres);
+
+    movie.genre = genres.map((genre) => genre.key).join(',');
+    this.movieRepository.save(movie);
   }
 
   async update(id: number, dto: MoviewDto) {
     const movie = new Movie();
     movie.id = dto.id;
+    movie.actors = dto.actors;
+    movie.country = dto.country;
+    movie.director = dto.director;
+    movie.language = dto.language;
+    movie.plot = dto.plot;
+    movie.poster = dto.poster;
+    movie.runtime = dto.runtime;
+    movie.title = dto.title;
+    movie.writer = dto.writer;
+    movie.year = dto.year;
     movie.released = new Date(dto.released);
 
     const genres = await Promise.all(
@@ -56,9 +76,10 @@ export class MovieService {
         async (id) => await this.genreRepository.findOne({ where: { id } }),
       ),
     );
-    movie.genre = genres;
+    console.log('---> genres', genres);
+    movie.genre = genres.map((genre) => genre.key).join(',');
 
-    this.movieRepository.update({ id }, movie);
+    this.movieRepository.save(movie);
   }
 
   delete(id: number) {

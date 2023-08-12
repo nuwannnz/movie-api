@@ -13,6 +13,12 @@ export class Review {
   review: string;
 
   @Column()
+  email: string;
+
+  @Column()
+  userName: string;
+
+  @Column()
   reviewTitle: string;
 
   @ManyToOne(() => Movie, (record) => record.reviews)

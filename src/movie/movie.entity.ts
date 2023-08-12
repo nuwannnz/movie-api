@@ -36,7 +36,7 @@ export class Movie {
   plot: string;
 
   @Column()
-  langage: string;
+  language: string;
 
   @Column()
   country: string;
@@ -47,9 +47,8 @@ export class Movie {
   @Column()
   released: Date;
 
-  @ManyToMany(() => Genre)
-  @JoinTable()
-  genre: Genre[];
+  @Column()
+  genre: string;
 
   @OneToMany(() => Review, (review) => review.movie)
   reviews: Review[];

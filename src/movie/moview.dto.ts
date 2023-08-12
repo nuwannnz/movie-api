@@ -7,7 +7,7 @@ export class MoviewDto {
   writer: string;
   actors: string;
   plot: string;
-  langage: string;
+  language: string;
   country: string;
   poster: string;
   released: Date;

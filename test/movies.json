@@ -1,0 +1,276 @@
+{
+  "movies": [
+    {
+
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "year": "2001",
+      "released": "16 Nov 2001",
+      "runtime": "152 min",
+      "genre": "Adventure, Family, Fantasy",
+      "director": "Chris Columbus",
+      "writer": "J.K. Rowling, Steve Kloves",
+      "actors": "Daniel Radcliffe, Rupert Grint, Richard Harris",
+      "plot": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
+      "language": "English, Latin",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmQ0ODBhMjUtNDRhOC00MGQzLTk5MTAtZDliODg5NmU5MjZhXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg",
+      "genreIds": [4, 14, 5]
+    },
+    {
+
+      "title": "Harry Potter and the Chamber of Secrets",
+      "year": "2002",
+      "released": "15 Nov 2002",
+      "runtime": "161 min",
+      "genre": "Adventure, Family, Fantasy",
+      "director": "Chris Columbus",
+      "writer": "J.K. Rowling, Steve Kloves",
+      "actors": "Daniel Radcliffe, Rupert Grint, Emma Watson",
+      "plot": "An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.",
+      "language": "English, Latin",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjE0YjUzNDUtMjc5OS00MTU3LTgxMmUtODhkOThkMzdjNWI4XkEyXkFqcGdeQXVyMTA3MzQ4MTc0._V1_SX300.jpg",
+      "genreIds": [4, 14, 5]
+    },
+    {
+
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "year": "2004",
+      "released": "04 Jun 2004",
+      "runtime": "142 min",
+      "genre": "Adventure, Family, Fantasy",
+      "director": "Alfonso Cuarón",
+      "writer": "J.K. Rowling, Steve Kloves",
+      "actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "plot": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
+      "language": "English, Latin, Old English",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg",
+      "genreIds": [4, 14, 5]
+    },
+    {
+
+      "title": "Harry Potter and the Goblet of Fire",
+      "year": "2005",
+      "released": "18 Nov 2005",
+      "runtime": "157 min",
+      "genre": "Adventure, Family, Fantasy",
+      "director": "Mike Newell",
+      "writer": "Steve Kloves, J.K. Rowling",
+      "actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "plot": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
+      "language": "English, French, Latin",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg",
+      "genreIds": [4, 14, 5]
+    },
+    {
+
+      "title": "Harry Potter and the Order of the Phoenix",
+      "year": "2007",
+      "released": "11 Jul 2007",
+      "runtime": "138 min",
+      "genre": "Action, Adventure, Family",
+      "director": "David Yates",
+      "writer": "Michael Goldenberg, J.K. Rowling",
+      "actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "plot": "With their warning about Lord Voldemort's return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.",
+      "language": "English, Latin",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTA3MmRmZDgtOWU1Ny00ZDc5LWFkN2YtNzNlY2UxZmY0N2IyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
+      "genreIds": [1, 4, 14]
+    },
+    {
+
+      "title": "Harry Potter and the Half-Blood Prince",
+      "year": "2009",
+      "released": "15 Jul 2009",
+      "runtime": "153 min",
+      "genre": "Action, Adventure, Family",
+      "director": "David Yates",
+      "writer": "Steve Kloves, J.K. Rowling",
+      "actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "plot": "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as \"the property of the Half-Blood Prince\" and begins to learn more about Lord Voldemort's dark past.",
+      "language": "English, Latin",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg",
+      "genreIds": [1, 4, 14]
+    },
+    {
+
+      "title": "Harry Potter and the Deathly Hallows: Part 1",
+      "year": "2010",
+      "released": "19 Nov 2010",
+      "runtime": "146 min",
+      "genre": "Adventure, Family, Fantasy",
+      "director": "David Yates",
+      "writer": "Steve Kloves, J.K. Rowling",
+      "actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "plot": "As Harry, Ron and Hermione race against time and evil to destroy the Horcruxes, they uncover the existence of the three most powerful objects in the wizarding world: the Deathly Hallows.",
+      "language": "English, Latin",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg",
+      "genreIds": [4, 14, 5]
+    },
+    {
+
+      "title": "Harry Potter and the Deathly Hallows: Part 2",
+      "year": "2011",
+      "released": "15 Jul 2011",
+      "runtime": "130 min",
+      "genre": "Adventure, Family, Fantasy",
+      "director": "David Yates",
+      "writer": "Steve Kloves, J.K. Rowling",
+      "actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "plot": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
+      "language": "English, Latin",
+      "country": "United Kingdom, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+      "genreIds": [4, 14, 5]
+    },
+    {
+
+      "title": "Guardians of the Galaxy",
+      "year": "2014",
+      "released": "01 Aug 2014",
+      "runtime": "121 min",
+      "genre": "Action, Adventure, Comedy",
+      "director": "James Gunn",
+      "writer": "James Gunn, Nicole Perlman, Dan Abnett",
+      "actors": "Chris Pratt, Vin Diesel, Bradley Cooper",
+      "plot": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+      "language": "English",
+      "country": "United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDIzMTk4NDYtMjg5OS00ZGI0LWJhZDYtMzdmZGY1YWU5ZGNkXkEyXkFqcGdeQXVyMTI5NzUyMTIz._V1_SX300.jpg",
+      "genreIds": [1, 4, 3]
+    },
+    {
+
+      "title": "Guardians of the Galaxy Vol. 2",
+      "year": "2017",
+      "released": "05 May 2017",
+      "runtime": "136 min",
+      "genre": "Action, Adventure, Comedy",
+      "director": "James Gunn",
+      "writer": "James Gunn, Dan Abnett, Andy Lanning",
+      "actors": "Chris Pratt, Zoe Saldana, Dave Bautista",
+      "plot": "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father, the ambitious celestial being Ego.",
+      "language": "English",
+      "country": "United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg",
+      "genreIds": [1, 4, 3]
+    },
+    {
+
+      "title": "Guardians of the Galaxy Vol. 3",
+      "year": "2023",
+      "released": "05 May 2023",
+      "runtime": "150 min",
+      "genre": "Action, Adventure, Comedy",
+      "director": "James Gunn",
+      "writer": "James Gunn, Jim Starlin, Stan Lee",
+      "actors": "Chris Pratt, Chukwudi Iwuji, Bradley Cooper",
+      "plot": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.",
+      "language": "English",
+      "country": "United States, New Zealand, France, Canada",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "genreIds": [1, 4, 3]
+    },
+    {
+
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": "2001",
+      "released": "19 Dec 2001",
+      "runtime": "178 min",
+      "genre": "Action, Adventure, Drama",
+      "director": "Peter Jackson",
+      "writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+      "actors": "Elijah Wood, Ian McKellen, Orlando Bloom",
+      "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "language": "English, Sindarin",
+      "country": "New Zealand, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+      "genreIds": [1, 4, 2]
+    },
+    {
+
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": "2002",
+      "released": "18 Dec 2002",
+      "runtime": "179 min",
+      "genre": "Action, Adventure, Drama",
+      "director": "Peter Jackson",
+      "writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+      "actors": "Elijah Wood, Ian McKellen, Viggo Mortensen",
+      "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "language": "English, Sindarin, Old English",
+      "country": "New Zealand, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "genreIds": [1, 4, 2]
+    },
+    {
+
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": "2003",
+      "released": "17 Dec 2003",
+      "runtime": "201 min",
+      "genre": "Action, Adventure, Drama",
+      "director": "Peter Jackson",
+      "writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+      "actors": "Elijah Wood, Viggo Mortensen, Ian McKellen",
+      "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "language": "English, Quenya, Old English, Sindarin",
+      "country": "New Zealand, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "genreIds": [1, 4, 2]
+    },
+    {
+
+      "title": "The Hobbit: An Unexpected Journey",
+      "year": "2012",
+      "released": "14 Dec 2012",
+      "runtime": "169 min",
+      "genre": "Adventure, Fantasy",
+      "director": "Peter Jackson",
+      "writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
+      "actors": "Martin Freeman, Ian McKellen, Richard Armitage",
+      "plot": "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.",
+      "language": "English",
+      "country": "New Zealand, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg",
+      "genreIds": [4, 5]
+    },
+    {
+
+      "title": "The Hobbit: The Desolation of Smaug",
+      "year": "2013",
+      "released": "13 Dec 2013",
+      "runtime": "161 min",
+      "genre": "Adventure, Drama, Fantasy",
+      "director": "Peter Jackson",
+      "writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
+      "actors": "Ian McKellen, Martin Freeman, Richard Armitage",
+      "plot": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.",
+      "language": "English",
+      "country": "New Zealand, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_SX300.jpg",
+      "genreIds": [5, 4, 2]
+    },
+    {
+
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "year": "2014",
+      "released": "17 Dec 2014",
+      "runtime": "144 min",
+      "genre": "Adventure, Fantasy",
+      "director": "Peter Jackson",
+      "writer": "Fran Walsh, Philippa Boyens, Peter Jackson",
+      "actors": "Ian McKellen, Martin Freeman, Richard Armitage",
+      "plot": "Bilbo and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.",
+      "language": "English",
+      "country": "New Zealand, United States",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTYzNDE3OTQ3MF5BMl5BanBnXkFtZTgwODczMTg4MjE@._V1_SX300.jpg",
+      "genreIds": [4, 5]
+    }
+  ]
+}

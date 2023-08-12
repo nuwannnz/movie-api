@@ -36,6 +36,8 @@ export class ReviewService {
     review.review = dto.review;
     review.reviewTitle = dto.reviewTitle;
     review.rating = dto.rating;
+    review.email = dto.email;
+    review.userName = dto.userName;
 
     const movie = await this.movieRepository.findOneBy({
       id: dto.movieId,
@@ -52,6 +54,8 @@ export class ReviewService {
     review.review = dto.review;
     review.reviewTitle = dto.reviewTitle;
     review.rating = dto.rating;
+    review.email = dto.email;
+    review.userName = dto.userName;
 
     const movie = await this.movieRepository.findOneBy({
       id: dto.movieId,
