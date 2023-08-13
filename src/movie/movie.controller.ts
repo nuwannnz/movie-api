@@ -19,6 +19,11 @@ export class MovieController {
     return this.movieService.getAll();
   }
 
+  @Get('/trending')
+  getTrendingMovies() {
+    return this.movieService.getTrendingMovies();
+  }
+
   @Get(':id')
   getDailyRecordById(@Param('id') id: number) {
     return this.movieService.getById(id);

@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/movie-api/dev/1691852450735-2023-08-12T15:00:50.735Z/movie-api.zip"
+                "S3Key": "serverless/movie-api/dev/1691907158745-2023-08-13T06:12:38.745Z/movie-api.zip"
               },
               "Handler": "dist/main.handler",
               "Runtime": "nodejs16.x",
@@ -192,14 +192,14 @@
               "MainLogGroup"
             ]
           },
-          "MainLambdaVersionR9BDqiCdcUfp51qetv8FUCpK5Tzamw2TWMY7ugX09k": {
+          "MainLambdaVersionbF23PN7TmdrtznHEVx4V1V4jyzRLmkH2g2LrcAX8": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "MainLambdaFunction"
               },
-              "CodeSha256": "OLiSbLbSNQgainUEh/3a2P4U6EEqn4KE9sIGf9S9XbQ="
+              "CodeSha256": "6u0u72Du8soDsP3aOy/v6HYTBr5/ZqTX6gHZ0unj0WA="
             }
           },
           "ApiGatewayRestApi": {
@@ -324,7 +324,7 @@
               "MainLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1691852421082": {
+          "ApiGatewayDeployment1691907103845": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -387,7 +387,7 @@
           "MainLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "MainLambdaVersionR9BDqiCdcUfp51qetv8FUCpK5Tzamw2TWMY7ugX09k"
+              "Ref": "MainLambdaVersionbF23PN7TmdrtznHEVx4V1V4jyzRLmkH2g2LrcAX8"
             },
             "Export": {
               "Name": "sls-movie-api-dev-MainLambdaFunctionQualifiedArn"
@@ -534,7 +534,7 @@
         "timeout": 6,
         "runtime": "nodejs16.x",
         "vpc": {},
-        "versionLogicalId": "MainLambdaVersionR9BDqiCdcUfp51qetv8FUCpK5Tzamw2TWMY7ugX09k"
+        "versionLogicalId": "MainLambdaVersionbF23PN7TmdrtznHEVx4V1V4jyzRLmkH2g2LrcAX8"
       }
     },
     "configValidationMode": "warn",
@@ -553,10 +553,10 @@
     },
     "layers": {},
     "isDashboardMonitoringPreconfigured": false,
-    "artifact": "/Users/nuwan/projects/personal/ESD/fitness-tracker-api/.serverless/movie-api.zip"
+    "artifact": "/Users/diliru/Documents/IIT-MSC/Mobile Application Development/cw2/movie-api/.serverless/movie-api.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/movie-api/dev/1691852450735-2023-08-12T15:00:50.735Z",
+    "artifactDirectoryName": "serverless/movie-api/dev/1691907158745-2023-08-13T06:12:38.745Z",
     "artifact": "movie-api.zip"
   }
 }

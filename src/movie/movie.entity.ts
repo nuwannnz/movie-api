@@ -52,4 +52,21 @@ export class Movie {
 
   @OneToMany(() => Review, (review) => review.movie)
   reviews: Review[];
+
+  getPopularityScore(): number {
+    const totalReviews = this.reviews.length;
+    let totalScore = 0;
+
+    for (const review of this.reviews) {
+      totalScore += review.rating;
+    }
+
+    const averageRating = totalScore / totalReviews;
+    const daysSinceRelease =
+      (new Date().getTime() - this.released.getTime()) / (24 * 60 * 60 * 1000);
+    const popularityScore =
+      0.7 * averageRating + 0.3 * Math.exp(-daysSinceRelease / 30);
+
+    return popularityScore;
+  }
 }

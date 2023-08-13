@@ -4,6 +4,7 @@ import { Movie } from './movie.entity';
 import { Repository } from 'typeorm';
 import { MoviewDto } from './moview.dto';
 import { Genre } from 'src/genre/genre.entity';
+import { TrendingMovieDTO } from './trendingMoview.dto';
 
 @Injectable()
 export class MovieService {
@@ -84,5 +85,22 @@ export class MovieService {
 
   delete(id: number) {
     this.movieRepository.delete({ id });
+  }
+
+  async getTrendingMovies(): Promise<TrendingMovieDTO[]> {
+    const movies = await this.movieRepository.find({
+      relations: ['reviews'], // Load reviews for each movie
+    });
+    const trendingMovies = await movies.map((movie) => ({
+      ...movie,
+      trendingScore: movie.getPopularityScore(),
+    }));
+    // Sort movies by trending score in descending order
+    trendingMovies.sort((a, b) => b.trendingScore - a.trendingScore);
+
+    // Get the top 20 trending movies
+    const topTrendingMovies = trendingMovies.slice(0, 5);
+
+    return topTrendingMovies;
   }
 }
