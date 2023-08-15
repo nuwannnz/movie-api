@@ -15,21 +15,27 @@ export class MovieService {
     private genreRepository: Repository<Genre>,
   ) {}
 
-  getById(id: number): Promise<Movie> {
-    return this.movieRepository.findOne({
+  async getById(id: number): Promise<Movie> {
+    const movie = await this.movieRepository.findOne({
       where: { id },
       relations: {
         reviews: true,
       },
     });
+    movie.reviews = movie.reviews.map((r) => ({ ...r, movieId: movie.id }));
+    return movie;
   }
 
-  getAll(): Promise<Movie[]> {
-    return this.movieRepository.find({
+  async getAll(): Promise<Movie[]> {
+    const movies = await this.movieRepository.find({
       relations: {
         reviews: true,
       },
     });
+    movies.forEach((movie) => {
+      movie.reviews = movie.reviews.map((r) => ({ ...r, movieId: movie.id }));
+    });
+    return movies;
   }
 
   async add(dto: MoviewDto) {
