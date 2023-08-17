@@ -109,4 +109,40 @@ export class MovieService {
 
     return topTrendingMovies;
   }
+
+  async addToFavorites(id: number, email: string) {
+    const movie = await this.movieRepository.findOne({
+      where: { id },
+    });
+    if (!movie) {
+      // Handle case where movie with the provided ID doesn't exist
+      return null;
+    }
+    if (!movie.favorites.includes(email)) {
+      movie.favorites.push(email);
+      return await this.movieRepository.save(movie);
+    }
+    return movie;
+  }
+
+  async removeFromFavorites(id: number, email: string) {
+    const movie = await this.movieRepository.findOne({
+      where: { id },
+    });
+    const emailIndex = movie.favorites.indexOf(email);
+    if (emailIndex !== -1) {
+      movie.favorites.splice(emailIndex, 1);
+      await this.movieRepository.save(movie);
+    }
+    return true;
+  }
+
+  async getAllFavoritesByUser(email: string) {
+    const movies = await this.movieRepository
+      .createQueryBuilder('movie')
+      .where(':email IN (movie.favorites)', { email })
+      .getMany();
+
+    return movies;
+  }
 }

@@ -50,6 +50,9 @@ export class Movie {
   @Column()
   genre: string;
 
+  @Column('simple-array')
+  favorites: string[];
+
   @OneToMany(() => Review, (review) => review.movie)
   reviews: Review[];
 

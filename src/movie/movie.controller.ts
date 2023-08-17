@@ -9,6 +9,7 @@ import {
 } from '@nestjs/common';
 import { MovieService } from './movie.service';
 import { MoviewDto } from './moview.dto';
+import { PostFavoriteDto } from './postFavorite.dto';
 
 @Controller('movie')
 export class MovieController {
@@ -22,6 +23,21 @@ export class MovieController {
   @Get('/trending')
   getTrendingMovies() {
     return this.movieService.getTrendingMovies();
+  }
+
+  @Get('/favorite/:email')
+  getFavoriteMovies(@Param('email') email: string) {
+    return this.movieService.getAllFavoritesByUser(email);
+  }
+
+  @Post('/favorite/:id')
+  postFavoriteMovie(@Param('id') id: number, @Body() dto: PostFavoriteDto) {
+    return this.movieService.addToFavorites(id, dto.email);
+  }
+
+  @Delete('/favorite/:id')
+  deleteFavoriteMovie(@Param('id') id: number, @Body() dto: PostFavoriteDto) {
+    return this.movieService.removeFromFavorites(id, dto.email);
   }
 
   @Get(':id')
