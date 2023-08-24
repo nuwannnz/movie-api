@@ -138,11 +138,11 @@ export class MovieService {
   }
 
   async getAllFavoritesByUser(email: string) {
-    const movies = await this.movieRepository
-      .createQueryBuilder('movie')
-      .where(':email IN (movie.favorites)', { email })
-      .getMany();
+    const allMovies = await this.movieRepository.find();
+    const filteredMovies = allMovies.filter((movie) =>
+      movie.favorites.includes(email),
+    );
 
-    return movies;
+    return filteredMovies;
   }
 }
