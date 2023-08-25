@@ -19,6 +19,11 @@ export class ReviewController {
     return this.reviewService.getAll();
   }
 
+  @Get('/by-movie/:id')
+  getRecordsByMovie(@Param('id') id: number) {
+    return this.reviewService.getByMovieId(id);
+  }
+
   @Get(':id')
   getRecordById(@Param('id') id: number) {
     return this.reviewService.getById(id);

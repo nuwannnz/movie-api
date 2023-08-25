@@ -162,7 +162,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/movie-api/dev/1692117139446-2023-08-15T16:32:19.446Z/movie-api.zip"
+          "S3Key": "serverless/movie-api/dev/1692875292250-2023-08-24T11:08:12.250Z/movie-api.zip"
         },
         "Handler": "dist/main.handler",
         "Runtime": "nodejs16.x",
@@ -180,14 +180,14 @@
         "MainLogGroup"
       ]
     },
-    "MainLambdaVersionbUhI7eq3VrJBU6n4az2bUvSt1TRgJJPTrDJhH0XkAVE": {
+    "MainLambdaVersionaxpdgNoCFITlRKJDW6Q3AN3WmUW5VLR2ajBzmFJUt0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "MainLambdaFunction"
         },
-        "CodeSha256": "3ORZGTZ9TvGCnJkT2Z3R0W49TaXtggOOzwXA5d5Qu54="
+        "CodeSha256": "kzTsUDNjbPkP6BZAyxWFfJw6XfJutv1BETGsBQyHx4M="
       }
     },
     "ApiGatewayRestApi": {
@@ -312,7 +312,7 @@
         "MainLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1692117110273": {
+    "ApiGatewayDeployment1692875257938": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -375,7 +375,7 @@
     "MainLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "MainLambdaVersionbUhI7eq3VrJBU6n4az2bUvSt1TRgJJPTrDJhH0XkAVE"
+        "Ref": "MainLambdaVersionaxpdgNoCFITlRKJDW6Q3AN3WmUW5VLR2ajBzmFJUt0"
       },
       "Export": {
         "Name": "sls-movie-api-dev-MainLambdaFunctionQualifiedArn"

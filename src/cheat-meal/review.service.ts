@@ -23,6 +23,12 @@ export class ReviewService {
     });
   }
 
+  getByMovieId(id: number): Promise<Review[]> {
+    return this.reviewRepository.find({
+      where: { movie: { id: id } },
+    });
+  }
+
   getAll(): Promise<Review[]> {
     return this.reviewRepository.find({
       relations: {
