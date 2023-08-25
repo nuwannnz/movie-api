@@ -15,7 +15,7 @@ export class MovieService {
     private genreRepository: Repository<Genre>,
   ) {}
 
-  async getById(id: number): Promise<Movie> {
+  async getById(id: number) {
     const movie = await this.movieRepository.findOne({
       where: { id },
       relations: {
@@ -23,7 +23,13 @@ export class MovieService {
       },
     });
     movie.reviews = movie.reviews.map((r) => ({ ...r, movieId: movie.id }));
-    return movie;
+
+    const reviewAverage =
+      movie.reviews.reduce((val, currentReview) => {
+        return val + currentReview.rating;
+      }, 0) / movie.reviews.length;
+
+    return { ...movie, reviewAverage };
   }
 
   async getAll(): Promise<Movie[]> {
