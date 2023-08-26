@@ -32,16 +32,29 @@ export class MovieService {
     return { ...movie, reviewAverage };
   }
 
-  async getAll(): Promise<Movie[]> {
+  async getAll() {
     const movies = await this.movieRepository.find({
       relations: {
         reviews: true,
       },
     });
+
     movies.forEach((movie) => {
       movie.reviews = movie.reviews.map((r) => ({ ...r, movieId: movie.id }));
     });
-    return movies;
+
+    const movieListWithAvg = movies.map((movie) => {
+      const reviewAverage =
+        movie.reviews.reduce((val, currentReview) => {
+          return val + currentReview.rating;
+        }, 0) / movie.reviews.length;
+
+      return {
+        ...movie,
+        reviewAverage: Number(reviewAverage.toFixed(2)),
+      };
+    });
+    return movieListWithAvg;
   }
 
   async add(dto: MoviewDto) {
