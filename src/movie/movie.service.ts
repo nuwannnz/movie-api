@@ -29,7 +29,7 @@ export class MovieService {
         return val + currentReview.rating;
       }, 0) / movie.reviews.length;
 
-    return { ...movie, reviewAverage };
+    return { ...movie, reviewAverage: reviewAverage ?? 0 };
   }
 
   async getAll() {
@@ -51,7 +51,7 @@ export class MovieService {
 
       return {
         ...movie,
-        reviewAverage: Number(reviewAverage.toFixed(2)),
+        reviewAverage: reviewAverage ? Number(reviewAverage.toFixed(2)) : 0,
       };
     });
     return movieListWithAvg;
